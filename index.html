@@ -1,9 +1,83 @@
-<?php require 'header.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Dataland</title>
+	<link rel="icon"  type="image/png"  href="assets/favicon.png" />
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+</head>
 
 <body>
 
+
+
 	<div class="content" id="page-top">
-		<?php require 'nav.php'; ?>
+		<header class="header" id="top">
+
+		    <nav class="header-nav">
+		         <a href="index.php"><h1 class="site-logo ">DATALAND</h1></a>
+		    </nav>
+
+
+		    <nav role='navigation' class="hamburger-nav">
+		      <div id="menuToggle">
+		        <input type="checkbox" >
+		        <span></span>
+		        <span></span>
+		        <span></span>
+		        <ul id="menu">
+		          <a href="#"><li>HOME</li></a>
+		          <a href="#" id="hamburger-dropdown"><li>ABOUT</li></a>
+		          <div id="dropdown-list">
+		              <a href="web-design-development.php"> <li>WEB DESIGN & DEVELOPMENT</li> </a>
+		              <a href="psl.php"> <li>FAQ</li> </a>
+		              <!-- <a href="#"> <li>Print & Advertising</li> </a> -->
+
+		          </div>
+		           <a href="#contact-form" id="hamburger-dropdown"><li>CONTACT</li></a>
+		        </ul>
+		      </div>
+		    </nav>
+
+
+
+
+		    <div class="header-menu v-align">
+		        <ul>
+		            <li>
+		                <div class="dropdown">
+		                  <button class="dropbtn"><a href="index.php">Home</a></button>
+		                </div>
+		            </li>
+		            <li>
+		                <div class="dropdown sub-menu-parent">
+		                  <button class="dropbtn sub-menu-parent">ABOUT</button>
+		                  <div class="dropdown-content sub-menu">
+		                    <a href="web-design-development.php">FAQ</a>
+
+		                  </div>
+		                </div>
+		            </li>
+		            <li>
+		                <div class="dropdown">
+		                  <button class="dropbtn"><a href="contact.php">Contact</a></button>
+		                </div>
+		            </li>
+		        </ul>
+		    </div>
+		</header>
+
 		<div class="container-fluid">
 			<div class="row">
 				<div class="splash">
