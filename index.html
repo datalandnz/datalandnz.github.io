@@ -1,1 +1,226 @@
-hey
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>Traveller Web app</title>
+    	<link href="css/bootstrap.min.css" rel="stylesheet">
+    	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    	<link rel="icon" type="image/png" href="assets/favicon.png" />
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Istok+Web" rel="stylesheet">
+		
+	</head>
+	<body>
+	
+
+		<div id="main-container">
+			<div id="splash">
+				
+				<img class="logo" src="assets/logo_White.png" alt="Traveller logo">	
+				<a href="#how-it-works"> 
+					<img class="info" src="assets/info.png" alt="link to info about website"> 
+				</a>
+				
+				<div class="inputs animateme scrollme" data-when="enter"
+		        data-from="0"
+		        data-to="2"
+		        data-opacity="0"
+		        data-translatey="-500">
+
+					<form>
+						<label for="origin-input">Start Location</label>
+						<input id="origin-input" class="controls" type="text" placeholder="Enter an origin location">
+						<label for="destination-input">End Location</label>
+					    <input id="destination-input" class="controls" type="text" placeholder="Enter a destination location">
+					</form>
+
+					<div class="form-group">
+						<label for="numberOfPeople">How Many People (Max - 6)</label>
+						<input class="form-control pdInputs" type="number" name="numberOfPeople" id="numberOfPeople">
+						<span class="input-errors"></span>
+					</div>
+
+					<div class="form-group">
+						<label for="numberOfPeople">How Many Days (Max - 15)</label>
+						<input class="form-control pdInputs" type="number" name="numberOfDays" id="numberOfDays">
+						<span class="input-errors"></span>
+					</div>
+
+
+
+					<div class="input-group">
+						<div class="input-group-btn">
+							<button type="button" class="btn btn-default dropdown-toggle" id="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Type of Transport<span class="caret"></span></button>
+							<ul class="dropdown-menu dropdown-menu-right">
+							    <li id="motorbike" ><a href="#">Motorbike 1 Person</a></li>
+							    <li id="small-car"><a href="#">Small Car 1-2 People</a></li>
+							    <li id="large-car"><a href="#">Large Car 1-5 people</a></li>
+							    <li id="motor-home"><a href="#">Motor Home 2-6 people</a></li>
+							</ul>
+						</div><!-- /btn-group -->
+					</div><!-- /input-group -->
+							 
+				</div>
+
+				<div id="button-blocker"></div>
+
+				<a href="#map">
+					<div id="calculate">
+						<h3 id="calculateText" class="submit-button">Calculate</h3> 
+					</div>
+				</a>
+
+				<div class="button-error">
+					<label>All feilds must be filled in properly</label>
+				</div>
+						
+						
+			</div>
+			
+			<div id="map-function">
+
+				<a href="#splash"> 
+					<div class="to-splash-button">
+					<img src="assets/up-arrow.png" alt="up arrow icon">
+					</div>
+				</a>
+
+				<div id="map"></div>
+
+				<div class="price-section">
+					<div class="transport-cost">
+						<h3>Transport Hire Cost</h3>
+						<div id="hire-type"></div>
+						<div id="hire-cost"></div>
+					</div>
+					<div class="plus">
+						<img src="assets/add.png" alt="add icon">
+					</div>
+					<div class="petrol-cost">
+						<h3>Approx Petrol Cost</h3>
+						<div id="route-distance"></div>
+						<div id="route-duration" ></div>
+						<div id="petrol-cost"></div>
+					</div>
+					<div class="equals">
+						<img src="assets/equal.png" alt="add icon">
+					</div>
+					<div class="total_cost">
+						<h3>Estimated Overall Cost</h3>
+						<div id="total-cost"></div>
+					</div>
+				</div>
+			</div>
+
+
+			
+			<div id="how-it-works">
+			<h2 class="animateme scrollme" 
+			data-when="enter"
+	        data-from="0.6"
+	        data-to="0"
+	        data-opacity="0"
+	        data-translatey="-100">
+	        How it works</h2>
+					
+			<div class="text-box animateme scrollme" 
+			data-when="enter"
+	        data-from="0.99"
+	        data-to="0"
+	        data-opacity="0"
+	        data-translatex="-400">
+					<p>This is a web app in association with Tourism New Zealand to help tourists plan out how much it's going to cost them to rent out a car and drive around New Zealand.
+					<br>
+					<br>
+
+					All you need to do is input a little bit of information. First off, where you will be starting off on your journey and the end destination of your journey. Secondly, how many days you plan on travelling for and how many people are going on the trip. Lastly, put in what sort of car you plan on renting out.
+					<br>
+					<br>
+					Once all the information fields have been completed you will then see a map that shows your journey from A to B and directly below it will tell you how much it's going to cost for vehicle hire over hovever many days you chose, petrol costs for the distance you plan to travel and a summary of the total cost. 	
+					  </p>
+					  <div class="icon-boxs">
+					  	<div class="box-size">
+					  		<img src="assets/motorbike.png">
+					  		<h3>Motorbike</h3>
+					  		<p>Rent limits: min 1 day and max 5 days </p>
+					  		<p>Rent costs: $109 per day</p>
+					  	</div>
+					  	<div class="box-size">
+					  		<img src="assets/small-car.png">
+					  		<h3>Small Car</h3>
+					  		<p>Rent limits: min 1 day and max 10 days </p>
+					  		<p>Rent costs: $129 per day</p>
+					  	</div>
+					  	<div class="box-size">
+					  		<img src="assets/large-car.png">
+					  		<h3>Large Car</h3>
+					  		<p>Rent limits: min 3 day and max 10 days </p>
+					  		<p>Rent costs: $144 per day</p>
+					  	</div>
+					  	<div class="box-size no-border" >
+					  		<img src="assets/caravan.png">
+					  		<h3>Motor Home</h3>
+					  		<p>Rent limits: min 2 day and max 15 days </p>
+					  		<p>Rent costs: $200 per day</p>
+					  	</div>
+
+					  </div>
+					  
+					  
+					  
+					  
+				</div>
+
+				<a href="#splash">  
+					<div class="to-top clicked">
+						<h3>Back to Top</h3>
+					</div>
+				</a>
+
+			</div>
+			
+
+
+
+
+		</div>	
+
+
+			
+<div id="video-container">
+				<div id="cino">
+					<video autoplay="" loop="">
+						<source src="assets/cino.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+
+		
+
+  
+   		
+    
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxckEIcLpNCyyS578Td9X4qu4RSmUJ7Io&libraries=places"> </script>
+		<script type="text/javascript" src="js/scrollme/jquery.scrollme.js"></script>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+		 <script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>
+
+
+
+
+
+
+
