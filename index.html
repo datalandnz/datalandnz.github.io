@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -79,21 +80,25 @@
 
 		<div class="container-fluid">
 			<div class="row">
-				<div class="splash">
+				<div class="splash" id="large-header">
+					<canvas id="demo-canvas"></canvas>
 					<div class="wave">
-							<img	src="assets/background.svg" alt="background image for splash page" >
+							<!-- <img	src="assets/background.svg" alt="background image for splash page" > -->
 					</div>
 
 					<div class="logo-pic col-lg-4 col-xs-12">
-						<img class="col-xs-12 pic v-align" src="assets/logo.png" alt="Logo">
-						<!-- <h2>DATALAND</h2> -->
-
+						<img class="col-xs-12 v-align" src="assets/logo.png" alt="Logo">
+							<div class="quote-text v-align">
+								<h2>using open data to build creative solutions</h2>
+							</div>
 					</div>
 				</div>
 
 
 			</div>
 		</div>
+
+
 
 		<div class="container-fluid">
 			<div class="row">
@@ -206,6 +211,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script type="text/javascript" src="js/scrollme/jquery.scrollme.js"></script>
 	<script src="js/ScrollTrigger.min.js"></script>
+	<!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script> -->
+
 
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
