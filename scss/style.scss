@@ -245,7 +245,9 @@ header,
 .splash {
     height: 100vh;
     width: 100vw;
-    background-color: #3A6AAF;
+    // background-color: #3A6AAF;
+    background-image: url('../assets/background.jpg');
+    background-repeat: no-repeat;
     display: flex;
 }
 
@@ -253,6 +255,7 @@ header,
     width: 100%;
     align-self: flex-end;
     position: absolute;
+    // background-color: white;
 }
 
 .site-logo{
@@ -260,9 +263,7 @@ header,
 }
 
 .logo-pic {
-    height: 400px;
-    width: 400px;
-    border: 4px solid white;
+
     position: absolute;
     /*it can be fixed too*/
     left: 0;
