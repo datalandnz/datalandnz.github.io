@@ -81,7 +81,7 @@ header {
 .header .header-nav .site-logo {
   color: black;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Gugi', cursive;
   font-size: 30px;
   text-align: center; }
 
@@ -185,7 +185,7 @@ header {
 .splash {
   height: 100vh;
   width: 100vw;
-  background-image: url("../assets/background.jpg");
+  background-image: url("../assets/background2.png");
   background-repeat: no-repeat;
   display: flex; }
 
@@ -193,17 +193,20 @@ header {
   width: 100%;
   height: 100%;
   align-self: flex-end;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.5); }
+  position: absolute; }
 
 .quote-text {
   display: inline-block;
   color: white;
   text-align: center;
-  font-family: 'Raleway'; }
+  font-family: 'Josefin Sans', sans-serif; }
+  .quote-text h2 {
+    text-transform: uppercase; }
 
 .site-logo {
   margin: 0 auto; }
+  .site-logo h1 {
+    font-family: 'Gugi', cursive; }
 
 .logo-pic {
   position: absolute;
@@ -221,7 +224,7 @@ header {
     vertical-align: middle;
     max-height: 202px;
     max-width: 395px;
-    left: 36px; }
+    left: 96px; }
   .logo-pic p {
     position: absolute;
     width: 95%;
