@@ -298,9 +298,8 @@ header,
 
     img {
         vertical-align: middle;
-        max-height: 202px;
-        max-width: 395px;
-        left: 16px;
+        margin: auto;
+
 
 
     }
@@ -531,13 +530,29 @@ header,
 .contact {
     height: 100vh;
     width: 100vw;
-    background-color: #3A6AAF;
+    background-color: #9cc3c1;
 
     h2 {
         font-size: 3.5em;
         color: white;
         text-align: center;
         margin-top: 100px;
+    }
+}
+
+.contact-email {
+
+  text-align: center;
+  color: white;
+
+
+}
+
+.email {
+    h4{
+      padding-top: 100px;
+      text-transform: uppercase;
+      font-size: 3em;
     }
 }
 
@@ -556,6 +571,7 @@ header,
 .contact-message {
     text-align: center;
     color: white;
+
 }
 
 label {
@@ -771,10 +787,33 @@ footer {
 
 
 //Media Queries
+
+@media only screen and (max-width: 1200px) {
+
+
+    .logo-pic{
+        border: none;
+        max-width: 50%;
+        max-height: 50%;
+        overflow: hidden;
+    }
+
+    .quote-text{
+      padding-bottom: 144px;
+    }
+}
+
+
 @media only screen and (max-width: 992px) {
     .developer-icon h2 {
         margin: 0;
     }
+
+    .quote-text h2 {
+      padding-top: 100px;
+      font-size: 21px;
+  }
+
 }
 
 @media screen and (max-width: 510px) {
@@ -960,6 +999,20 @@ footer {
         }
     }
 
+      .quote-text h2 {
+      text-transform: uppercase;
+      padding-top: 118px;
+      font-size: 18px;
+  }
+
+  .email {
+      h4{
+        padding-top: 0px;
+        text-transform: lowercase;
+        font-size: 1em;
+      }
+  }
+
 }
 
 
@@ -1015,7 +1068,7 @@ footer {
 
 
     .dev-container{
-            height: 1200px;
+            height: 1100px;
     }
 
     .developer-icon{
@@ -1026,15 +1079,14 @@ footer {
     }
 
     .ux{
-        height: 900px;
+        height: 1400px;
     }
 
-    .dev-container{
-        height: 900px;
-    }
+
 
     #message {
     height: 100px;
     }
+
 
 }
