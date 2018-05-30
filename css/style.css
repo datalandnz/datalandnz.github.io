@@ -293,7 +293,7 @@ header {
   .design-text hr {
     height: 4px;
     width: 100%;
-    background-color: #d14c2b; }
+    background-color: #fad292; }
 
 .ux-icon {
   margin: 0 auto;
@@ -314,7 +314,7 @@ header {
   .developer-text hr {
     height: 4px;
     width: 100%;
-    background-color: #2bafd1; }
+    background-color: #9cc3c1; }
 
 .dev-container {
   height: 100vh;
@@ -567,6 +567,10 @@ footer {
   height: 100vh;
   width: 100vw;
   background-color: #F3F3F3; }
+
+.hello {
+  text-align: center;
+  padding-top: 100px; }
 
 @media only screen and (max-width: 1200px) {
   .logo-pic {
