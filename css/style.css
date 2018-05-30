@@ -730,13 +730,19 @@ footer {
 
   .quote-text h2 {
     text-transform: uppercase;
-    padding-top: 118px;
-    font-size: 18px; }
+    padding-top: 100px;
+    font-size: 24px; }
 
   .email h4 {
     padding-top: 0px;
     text-transform: lowercase;
-    font-size: 1em; } }
+    font-size: 1em; }
+
+  .logo-pic {
+    border: none;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden; } }
 @media screen and (max-width: 415px) {
   .splash {
     overflow: auto;
@@ -744,6 +750,9 @@ footer {
 
   .logo-pic {
     border: none; }
+
+  .site-logo {
+    padding-top: 8px; }
 
   #menuToggle {
     top: 26px; }
@@ -774,6 +783,10 @@ footer {
     height: 1400px; }
 
   #message {
-    height: 100px; } }
+    height: 100px; }
+
+  .hello {
+    text-align: center;
+    padding-top: 50px; } }
 
 /*# sourceMappingURL=style.css.map */
