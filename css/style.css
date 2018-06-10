@@ -416,6 +416,8 @@ header {
 .contact-email {
   text-align: center;
   color: white; }
+  .contact-email img {
+    padding-top: 100px; }
 
 .email h4 {
   padding-top: 100px;
