@@ -14,6 +14,82 @@ form{
 }
 
 
+.half {
+  float: left;
+  width: 100%;
+  padding: 0 1em;
+}
+/* Acordeon styles */
+.tab {
+  position: relative;
+  margin-bottom: 1px;
+  width: 100%;
+  color: #fff;
+  overflow: hidden;
+  font-size: 18px;
+}
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+label {
+  position: relative;
+  display: block;
+  padding: 0 0 0 1em;
+  background: white;
+  font-weight: bold;
+  line-height: 3;
+  cursor: pointer;
+}
+
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  background: #f3f3f3;
+  -webkit-transition: max-height .35s;
+  -o-transition: max-height .35s;
+  transition: max-height .35s;
+  color: black;
+}
+.blue .tab-content {
+  background: #3498db;
+}
+.tab-content p {
+  margin: 1em;
+
+}
+/* :checked */
+input:checked ~ .tab-content {
+  max-height: 10em;
+}
+/* Icon */
+label::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 3em;
+  height: 3em;
+  line-height: 3;
+  text-align: center;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+input[type=checkbox] + label::after {
+  content: "+";
+}
+input[type=radio] + label::after {
+  content: "\25BC";
+}
+input[type=checkbox]:checked + label::after {
+  transform: rotate(315deg);
+}
+input[type=radio]:checked + label::after {
+  transform: rotateX(180deg);
+}
+
 
 .but{
     display: block;
@@ -423,7 +499,7 @@ header,
     // height: 256px;
 }
 
-.developer-text {
+.skills-text {
     color: #353535;
     // border: 1px black dotted;
     float: left;
@@ -471,7 +547,7 @@ header,
     transform: translateY(0);
 }
 
-.developer-icon {
+.skills-icon {
     h2 {
         font-size: 10em;
         color: #353535;
@@ -548,45 +624,78 @@ header,
     color: white;
 }
 
-
-
-.contact {
+.schedule {
     height: 100vh;
     width: 100vw;
-    background-color: #9cc3c1;
+    background-color: #FFF;
+    h2{
+      font-size: 3.5em;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+
+}
+
+
+.faq {
+    height: 100vh;
+    width: 100vw;
+    max-height: 1200px;
+    background-color: #2196F3;
+    // overflow: hidden;
+
 
     h2 {
         font-size: 3.5em;
         color: white;
         text-align: center;
-        margin-top: 100px;
+        margin-top: 70px;
     }
 }
 
-.contact-email {
+.faq-background{
+  background-color: #2196F3;
+}
 
-  text-align: center;
-  color: white;
-  img{
-    padding-top: 100px;
+.accordion-background{
+  // width: 80%;
+  // height: 80vh;
+  // background-color: white;
+  // z-index: 1;
+  // box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  // margin: 0 auto;
+  // border-radius: 5px;
+
+  padding-top: 30px;
+
+}
+
+.tab-content{
+  font-size: 16px;
+  a{
+    color: #0000EE;
+    text-decoration: underline;
+  }
+}
+
+.dataland-accordion{
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  // border-bottom: 1px solid grey;
+  margin: 0 auto;
+  z-index: 2;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+  h3{
+    padding-left: 100px;
+    padding-top: 12px;
+    margin: 0;
+
   }
 
-}
-
-.email {
-    h4{
-      padding-top: 100px;
-      text-transform: uppercase;
-      font-size: 3em;
-    }
-}
-
-.latest-work-line {
-    hr {
-        height: 4px;
-        width: 50%;
-        background-color: #36d6b7;
-    }
 }
 
 .form-control {
@@ -600,7 +709,7 @@ header,
 }
 
 label {
-    color: white;
+    color: black;
 }
 
 #message {
@@ -834,7 +943,7 @@ footer {
 
 
 @media only screen and (max-width: 992px) {
-    .developer-icon h2 {
+    .skills-icon h2 {
         margin: 0;
     }
 
@@ -1084,7 +1193,7 @@ footer {
     //     z-index: 200px;
     // }
 
-    .developer-text {
+    .skills-text {
         h2{
             font-size: 2.5em;
         }
@@ -1111,7 +1220,7 @@ footer {
             height: 1100px;
     }
 
-    .developer-icon{
+    .skills-icon{
         h2{
             font-size: 6em;
             padding-top: 50px;
@@ -1133,5 +1242,18 @@ footer {
       padding-top: 50px;
     }
 
+    .faq{
+      h2{
+        margin-top: 20px;
+      }
+    }
+
+    .tab{
+      font-size: 14px;
+    }
+
+    input:checked ~ .tab-content{
+      max-height: 30em;
+    }
 
 }

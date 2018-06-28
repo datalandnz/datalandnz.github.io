@@ -9,6 +9,79 @@ p {
 form {
   color: black; }
 
+.half {
+  float: left;
+  width: 100%;
+  padding: 0 1em; }
+
+/* Acordeon styles */
+.tab {
+  position: relative;
+  margin-bottom: 1px;
+  width: 100%;
+  color: #fff;
+  overflow: hidden;
+  font-size: 18px; }
+
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1; }
+
+label {
+  position: relative;
+  display: block;
+  padding: 0 0 0 1em;
+  background: white;
+  font-weight: bold;
+  line-height: 3;
+  cursor: pointer; }
+
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  background: #f3f3f3;
+  -webkit-transition: max-height .35s;
+  -o-transition: max-height .35s;
+  transition: max-height .35s;
+  color: black; }
+
+.blue .tab-content {
+  background: #3498db; }
+
+.tab-content p {
+  margin: 1em; }
+
+/* :checked */
+input:checked ~ .tab-content {
+  max-height: 10em; }
+
+/* Icon */
+label::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 3em;
+  height: 3em;
+  line-height: 3;
+  text-align: center;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s; }
+
+input[type=checkbox] + label::after {
+  content: "+"; }
+
+input[type=radio] + label::after {
+  content: "\25BC"; }
+
+input[type=checkbox]:checked + label::after {
+  transform: rotate(315deg); }
+
+input[type=radio]:checked + label::after {
+  transform: rotateX(180deg); }
+
 .but {
   display: block; }
 
@@ -310,18 +383,18 @@ header {
   text-align: center;
   margin-top: 100px; }
 
-.developer-text {
+.skills-text {
   color: #353535;
   float: left;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0; }
-  .developer-text h2 {
+  .skills-text h2 {
     font-size: 3.5em; }
-  .developer-text p {
+  .skills-text p {
     font-size: 1.2em; }
-  .developer-text hr {
+  .skills-text hr {
     height: 4px;
     width: 100%;
     background-color: #9cc3c1; }
@@ -343,7 +416,7 @@ header {
   opacity: 1;
   transform: translateY(0); }
 
-.developer-icon h2 {
+.skills-icon h2 {
   font-size: 10em;
   color: #353535;
   font-family: 'Raleway';
@@ -404,31 +477,50 @@ header {
   background-color: black;
   color: white; }
 
-.contact {
+.schedule {
   height: 100vh;
   width: 100vw;
-  background-color: #9cc3c1; }
-  .contact h2 {
+  background-color: #FFF; }
+  .schedule h2 {
+    font-size: 3.5em;
+    text-align: center;
+    margin-top: 50px; }
+
+.faq {
+  height: 100vh;
+  width: 100vw;
+  max-height: 1200px;
+  background-color: #2196F3; }
+  .faq h2 {
     font-size: 3.5em;
     color: white;
     text-align: center;
-    margin-top: 100px; }
+    margin-top: 70px; }
 
-.contact-email {
-  text-align: center;
-  color: white; }
-  .contact-email img {
-    padding-top: 100px; }
+.faq-background {
+  background-color: #2196F3; }
 
-.email h4 {
-  padding-top: 100px;
-  text-transform: uppercase;
-  font-size: 3em; }
+.accordion-background {
+  padding-top: 30px; }
 
-.latest-work-line hr {
-  height: 4px;
-  width: 50%;
-  background-color: #36d6b7; }
+.tab-content {
+  font-size: 16px; }
+  .tab-content a {
+    color: #0000EE;
+    text-decoration: underline; }
+
+.dataland-accordion {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  margin: 0 auto;
+  z-index: 2;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; }
+  .dataland-accordion h3 {
+    padding-left: 100px;
+    padding-top: 12px;
+    margin: 0; }
 
 .form-control {
   width: 100%; }
@@ -438,7 +530,7 @@ header {
   color: white; }
 
 label {
-  color: white; }
+  color: black; }
 
 #message {
   height: 400px; }
@@ -596,7 +688,7 @@ footer {
     max-height: 50%;
     overflow: hidden; } }
 @media only screen and (max-width: 992px) {
-  .developer-icon h2 {
+  .skills-icon h2 {
     margin: 0; }
 
   .quote-text h2 {
@@ -774,7 +866,7 @@ footer {
   .header .header-nav .site-logo {
     font-size: 18px; }
 
-  .developer-text h2 {
+  .skills-text h2 {
     font-size: 2.5em; }
 
   .design-text h2 {
@@ -789,7 +881,7 @@ footer {
   .dev-container {
     height: 1100px; }
 
-  .developer-icon h2 {
+  .skills-icon h2 {
     font-size: 6em;
     padding-top: 50px; }
 
@@ -801,6 +893,15 @@ footer {
 
   .hello {
     text-align: center;
-    padding-top: 50px; } }
+    padding-top: 50px; }
+
+  .faq h2 {
+    margin-top: 20px; }
+
+  .tab {
+    font-size: 14px; }
+
+  input:checked ~ .tab-content {
+    max-height: 30em; } }
 
 /*# sourceMappingURL=style.css.map */
