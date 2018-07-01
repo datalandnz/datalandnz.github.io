@@ -489,8 +489,8 @@ header {
 .faq {
   height: 100vh;
   width: 100vw;
-  max-height: 1200px;
-  background-color: #2196F3; }
+  background-color: #2196F3;
+  display: inline-table; }
   .faq h2 {
     font-size: 3.5em;
     color: white;
@@ -547,12 +547,18 @@ label {
 a {
   color: black; }
 
+input:checked ~ .tab-content {
+  max-height: 30em; }
+
 footer {
   height: 80px;
   background-color: white;
   color: black;
   text-align: center;
   border-top: 1px solid #F3F3F3; }
+
+.clear-float {
+  clear: both; }
 
 .btt {
   padding-right: 20px;
@@ -902,6 +908,9 @@ footer {
     font-size: 14px; }
 
   input:checked ~ .tab-content {
-    max-height: 30em; } }
+    max-height: 30em; }
+
+  footer {
+    border-top: none; } }
 
 /*# sourceMappingURL=style.css.map */
