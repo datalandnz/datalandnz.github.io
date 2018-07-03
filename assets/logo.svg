@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320px" height="337px" viewBox="0 0 320 337" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Triangles-Copy-13" transform="translate(-90.000000, -29.000000)">
+            <g id="Group-2" transform="translate(90.000000, 29.000000)">
+                <g id="Group" fill="#FFFFFF">
+                    <path d="M159.794063,336.609425 L159.794063,337 L6.11476044,255.734033 L0,252.516074 L0.0250024866,252.502916 L158.167031,0.552936378 L158.167031,0 L158.342328,0.273655051 L158.514094,0 L317.81413,249.202814 L320,252.516904 L319.830026,252.458048 L319.856271,252.499841 L319.887117,252.516074 L319.871594,252.524243 L319.913315,252.59068 L320,252.622305 L318.552858,253.300112 L159.943558,337 L159.943558,336.688098 L159.794063,336.609425 Z" id="Combined-Shape"></path>
+                </g>
+                <g id="Group" transform="translate(6.000000, 9.000000)">
+                    <polygon id="Triangle-6-Copy" fill="#FAD293" points="152.632592 0.701705191 305.017007 239.032987 301.675386 240.321805 307.107983 242.303302 207.917138 288.751644 164.673367 312.220391 143.539503 312.220391 68.8927902 272.154321 1.39933788 242.303302"></polygon>
+                    <path d="M152.300596,0.701705191 L304.045323,237.998172 L300.050611,240.453 L306.735481,242.205008 L207.585142,288.751644 L164.341371,312.220391 L143.207507,312.220391 L68.5607942,272.154321 L27,251.302897 C109.059961,263.637014 150.826827,268.880723 152.300596,267.034023 C153.774366,265.187323 153.774366,211.657182 152.300596,106.4436 L152.300596,0.701705191 Z" id="Triangle-6-Copy-4" fill-opacity="0.1" fill="#000000"></path>
+                    <path d="M154,157.701705 L307,238.201705 L154,318.701705 L0.395096723,241.766934 L3.46868643,236.902821 L154,157.701705 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                    <polygon id="Triangle-6-Copy-2" fill="#9CC3C1" points="1 242.201705 154 161.701705 154 322.701705"></polygon>
+                    <polygon id="Triangle-6-Copy-3" fill="#9CC3C1" transform="translate(230.500000, 242.201705) scale(-1, 1) translate(-230.500000, -242.201705) " points="154 242.201705 307 161.701705 307 322.701705"></polygon>
+                    <path d="M154,161.701705 L307,242.201705 L154,322.701705 L1,242.201705 L154,161.701705 Z" id="Combined-Shape" fill="#9CC3C1"></path>
+                    <polygon id="Triangle-6-Copy-5" fill-opacity="0.1" fill="#000000" transform="translate(230.428497, 282.850853) scale(-1, 1) translate(-230.428497, -282.850853) " points="154 242.701705 306.856995 242.701705 306.856995 323"></polygon>
+                    <polygon id="Triangle-6-Copy-6" fill-opacity="0.1" fill="#000000" points="1 242.701705 153.856995 242.701705 153.856995 323"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

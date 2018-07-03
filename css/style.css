@@ -146,6 +146,10 @@ header {
   .header a {
     text-decoration: none; }
 
+.header-nav img {
+  max-width: 40px;
+  margin-left: 10px; }
+
 .header .header-nav {
   display: flex;
   align-items: center;

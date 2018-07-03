@@ -190,7 +190,12 @@ header,
     }
 
 }
-
+.header-nav{
+  img{
+    max-width: 40px;
+    margin-left: 10px;
+  }
+}
 
 .header .header-nav {
     display: flex;
