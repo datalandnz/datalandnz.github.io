@@ -303,8 +303,8 @@ header {
   bottom: 0;
   margin: auto;
   /*this to solve "the content will not be cut when the window is smaller than the content": */
-  max-width: 50%;
-  max-height: 50%;
+  max-width: 100%;
+  max-height: 100%;
   overflow: auto;
   text-align: center; }
   .logo-pic img {
