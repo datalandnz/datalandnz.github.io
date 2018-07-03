@@ -295,7 +295,7 @@ header {
   /*it can be fixed too*/
   left: 0;
   right: 0;
-  top: 0;
+  top: 150px;
   bottom: 0;
   margin: auto;
   /*this to solve "the content will not be cut when the window is smaller than the content": */
@@ -304,8 +304,18 @@ header {
   overflow: auto;
   text-align: center; }
   .logo-pic img {
-    vertical-align: middle;
-    margin: auto; }
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 250px; }
+  .logo-pic .register button {
+    background-color: #2ecc71;
+    height: 50px;
+    width: 150px;
+    border: none; }
+  .logo-pic .register button:hover {
+    border: 1px solid #27ae60;
+    background-color: #27ae60; }
   .logo-pic p {
     position: absolute;
     width: 95%;
@@ -861,7 +871,10 @@ footer {
     padding-top: 100px; }
 
   .logo-pic {
-    border: none; }
+    border: none;
+    top: 150px; }
+    .logo-pic img {
+      max-width: 200px; }
 
   .site-logo {
     padding-top: 8px; }

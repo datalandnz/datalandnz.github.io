@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="307px" height="323px" viewBox="0 0 307 323" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Triangles-Copy-11" transform="translate(-97.000000, -38.000000)">
+            <g id="Group" transform="translate(97.000000, 38.000000)">
+                <path d="M234.251813,275.951568 L301.440257,240.600786 L306.107983,242.303302 L234.251813,275.951568 Z M302.210786,236.208034 L153,157.701705 L6.93686658,234.551916 L151.632592,0.701705191 L302.210786,236.208034 Z M43.3780233,261.024783 L2.14066655,242.303302 L3.52950315,240.058731 L43.3780233,261.024783 Z" id="Combined-Shape" fill="#9CC3C1"></path>
+                <path d="M237.571436,274.204969 L300.833193,240.920189 L305.735481,242.205008 L237.571436,274.204969 Z M301.743284,235.96206 L153,157.701705 L151.953367,158.252384 C151.783562,142.658557 151.565972,125.388962 151.300596,106.4436 L151.300596,0.701705191 L301.743284,235.96206 Z" id="Combined-Shape" fill-opacity="0.1" fill="#000000"></path>
+                <polygon id="Triangle-6-Copy-2" fill="#9CC3C1" points="0 242.201705 153 161.701705 153 322.701705"></polygon>
+                <polygon id="Triangle-6-Copy-3" fill="#9CC3C1" transform="translate(229.500000, 242.201705) scale(-1, 1) translate(-229.500000, -242.201705) " points="153 242.201705 306 161.701705 306 322.701705"></polygon>
+                <polygon id="Triangle-6-Copy-9" fill-opacity="0.2" fill="#000000" transform="translate(229.500000, 242.201705) scale(-1, 1) translate(-229.500000, -242.201705) " points="153 242.201705 306 161.701705 306 322.701705"></polygon>
+                <polygon id="Triangle-6-Copy-10" fill-opacity="0.1" fill="#000000" points="-1.84741111e-13 242.201705 153 161.701705 153 322.701705"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

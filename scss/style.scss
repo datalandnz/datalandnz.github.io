@@ -373,7 +373,7 @@ header,
     /*it can be fixed too*/
     left: 0;
     right: 0;
-    top: 0;
+    top: 150px;
     bottom: 0;
     margin: auto;
     // text-align: center; margin: 1em 0;
@@ -384,11 +384,26 @@ header,
     text-align: center;
 
     img {
-        vertical-align: middle;
-        margin: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 250px;
 
 
 
+    }
+
+    .register{
+      button{
+        background-color: #2ecc71;
+        height: 50px;
+        width: 150px;
+        border: none;
+      }
+      button:hover{
+        border: 1px solid #27ae60;
+        background-color: #27ae60;
+      }
     }
 
     p{
@@ -1159,11 +1174,14 @@ footer {
       }
   }
 
+
+
   .logo-pic{
       border: none;
       max-width: 100%;
       max-height: 100%;
       overflow: hidden;
+
   }
 
 }
@@ -1178,6 +1196,10 @@ footer {
 
     .logo-pic{
         border: none;
+        top: 150px;
+        img{
+          max-width: 200px;
+        }
     }
 
     .site-logo{
