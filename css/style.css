@@ -359,9 +359,30 @@ header {
 .main-title .thin {
   font-weight: 200; }
 
-@media only screen and (max-width: 768px) {
-  .demo-1 .main-title {
-    font-size: 3em; } }
+#about::before {
+  display: block;
+  content: " ";
+  margin-top: -7vh;
+  height: 7vh;
+  visibility: hidden;
+  pointer-events: none; }
+
+#faq::before {
+  display: block;
+  content: " ";
+  margin-top: -7vh;
+  height: 7vh;
+  visibility: hidden;
+  pointer-events: none; }
+
+#sponsors::before {
+  display: block;
+  content: " ";
+  margin-top: -7vh;
+  height: 7vh;
+  visibility: hidden;
+  pointer-events: none; }
+
 .ux {
   height: 100vh;
   width: 100vw;
@@ -498,6 +519,27 @@ header {
     font-size: 3.5em;
     text-align: center;
     margin-top: 50px; }
+
+.sponsors {
+  height: 100vh;
+  width: 100vw;
+  background-color: #FFF; }
+  .sponsors h2 {
+    font-size: 3.5em;
+    text-align: center;
+    margin-top: 50px; }
+
+.sponsor-logo {
+  padding-top: 100px;
+  text-align: center; }
+  .sponsor-logo img {
+    max-width: 200px; }
+
+.acc img {
+  max-width: 150px; }
+
+.stats {
+  padding-bottom: 20px; }
 
 .faq {
   height: 100vh;
@@ -923,9 +965,6 @@ footer {
     font-size: 14px; }
 
   input:checked ~ .tab-content {
-    max-height: 30em; }
-
-  footer {
-    border-top: none; } }
+    max-height: 30em; } }
 
 /*# sourceMappingURL=style.css.map */

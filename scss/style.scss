@@ -463,13 +463,38 @@ header,
 	font-weight: 200;
 }
 
-@media only screen and (max-width : 768px) {
-	.demo-1 .main-title {
-		font-size: 3em;
-	}
-}
 
 //Testing/////
+
+#about::before {
+  display: block;
+  content: " ";
+  margin-top: -7vh;
+  height: 7vh;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#faq::before {
+  display: block;
+  content: " ";
+  margin-top: -7vh;
+  height: 7vh;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#sponsors::before {
+  display: block;
+  content: " ";
+  margin-top: -7vh;
+  height: 7vh;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+
+
 .ux {
     height: 100vh;
     width: 100vw;
@@ -655,6 +680,38 @@ header,
     }
 
 
+}
+
+.sponsors {
+    height: 100vh;
+    width: 100vw;
+    background-color: #FFF;
+    h2{
+      font-size: 3.5em;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+
+}
+
+.sponsor-logo{
+
+  padding-top: 100px;
+  text-align: center;
+  img{
+    max-width: 200px;
+  }
+}
+
+.acc{
+  img{
+    max-width: 150px;
+  }
+}
+
+.stats{
+  padding-bottom: 20px;
 }
 
 
@@ -1291,8 +1348,5 @@ footer {
       max-height: 30em;
     }
 
-    footer{
-      border-top: none;
-    }
 
 }

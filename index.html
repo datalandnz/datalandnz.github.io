@@ -6,11 +6,14 @@
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121843398-1"></script>
 	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+		window.dataLayer = window.dataLayer || [];
 
-	  gtag('config', 'UA-121843398-1');
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-121843398-1');
 	</script>
 
 	<meta charset="utf-8">
@@ -55,21 +58,19 @@
 						<a href="#page-top">
 							<li>HOME</li>
 						</a>
-						<a href="#" id="hamburger-dropdown">
-							 <a href="#faq"><li>FAQ</li></a>
-						</a>
-						<div id="dropdown-list">
-							<!-- <a href="#"> <li>FAQ</li> </a> -->
-							<!-- <a href="#"> <li>Print & Advertising</li> </a> -->
 
-						</div>
 						<a href="#about" id="hamburger-dropdown">
 							<li>ABOUT</li>
 						</a>
-						<!-- <a href="#contact-form" id="hamburger-dropdown">
+
+						<a href="#" id="hamburger-dropdown">
+							 <a href="#faq"><li>FAQ</li></a>
+						</a>
+
+						<a href="#sponsors" id="hamburger-dropdown">
 							<li>SPONSORS</li>
 						</a>
-						<a href="#contact-form" id="hamburger-dropdown">
+						<!-- <a href="#contact-form" id="hamburger-dropdown">
 							<li>SCHEDULE</li>
 						</a> -->
 					</ul>
@@ -85,24 +86,25 @@
 							<button class="dropbtn"><a href="#page-top">Home</a></button>
 						</div>
 					</li>
+
+					<li>
+						<div class="dropdown sub-menu-parent">
+							<button class="dropbtn sub-menu-parent"><a href="#about">About</a></button>
+						</div>
+					</li>
+
 					<li>
 						<div class="dropdown">
 							<button class="dropbtn"><a href="#faq">FAQ</a></button>
 						</div>
 					</li>
+
 					<li>
-						<div class="dropdown sub-menu-parent">
-							<button class="dropbtn sub-menu-parent"><a href="#about">About</a></button>
-							<div class="dropdown-content sub-menu">
-							</div>
+						<div class="dropdown">
+							<button class="dropbtn"><a href="#sponsors">sponsors</a></button>
 						</div>
 					</li>
 					<!-- <li>
-						<div class="dropdown">
-							<button class="dropbtn"><a href="#contact1">sponsors</a></button>
-						</div>
-					</li>
-					<li>
 						<div class="dropdown">
 							<button class="dropbtn"><a href="#contact1">schedule</a></button>
 						</div>
@@ -133,7 +135,7 @@
 						</div>
 						<div class="register">
 
-						<a href="https://dataland-nz.lilregie.com/booking/attendees/new"><button type="button" class="btn btn-success">Register Now!</button></a>
+							<a href="https://dataland-nz.lilregie.com/booking/attendees/new"><button type="button" class="btn btn-success">Register Now!</button></a>
 						</div>
 					</div>
 				</div>
@@ -182,7 +184,7 @@
 							<div class="skills-text col-xs-12 col-md-6 align-items-start">
 								<h2>Skills we're looking for</h2>
 								<hr>
-								<p>At DataLand we are looking not for technical skills but for a mindset of a love for creativity, a passion for working with people and unique, ambitious ways of approaching solving problems. We are aiming to include as diverse a skillset as possible,
+								<p>At DataLand we are looking not just for technical skills but for a mindset of a love for creativity, a passion for working with people and unique, ambitious ways of approaching solving problems. We are aiming to include as diverse a skillset as possible,
 									in order to help show how powerful a government can be when it embraces diversity and inclusion.
 									<br>
 									<br> Our aim is to use Open Data and Open Government principles to drive Innovation and Connectivity. We believe that this goal isn't possibile without the help of the next generation of digital workers.
@@ -228,7 +230,8 @@
 											<input id="tab-one" type="checkbox" name="tabs">
 											<label for="tab-one">What is a hackathon?</label>
 											<div class="tab-content">
-												<p>Hackathons provide a venue for self-expression and creativity through technology and ideas. People with technical and creative thinking backgrounds come together, form teams around a problem or idea, and collaboratively come up with a unique solution from scratch — these generally take the shape of websites and mobile apps, but we welcome other formats too – the sky’s the limit!</p>
+												<p>Hackathons provide a venue for self-expression and creativity through technology and ideas. People with technical and creative thinking backgrounds come together, form teams around a problem or idea, and collaboratively come up with a unique
+													solution from scratch — these generally take the shape of websites and mobile apps, but we welcome other formats too – the sky’s the limit!</p>
 											</div>
 										</div>
 										<div class="tab">
@@ -306,61 +309,44 @@
 
 									</div>
 								</div>
-
-								<!-- <div class="dataland-accordion " type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-								<h3>What is a hackathon?</h3>
 							</div>
-						</p>
-						<div class="collapse" id="collapseExample">
-							<div class="card card-body">
-								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-							</div>
-						</div>
-
-						<div class="dataland-accordion " type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
-							<h3>Who can attend</h3>
-						</div>
-					</p>
-					<div class="collapse" id="collapseExample1">
-						<div class="card card-body">
-							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-						</div>
-					</div>
-
-					<div class="dataland-accordion " type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
-						<h3>3</h3>
-					</div>
-				</p>
-				<div class="collapse" id="collapseExample1">
-					<div class="card card-body">
-						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-					</div>
-				</div> -->
-
-							</div>
-
-
-
-
-
-
-
 					</div>
 				</div>
 			</div>
-
 		</div>
 	</div>
+
+	<div id="sponsors" class="container-fluid">
+		<div class="row">
+			<div class="sponsors col-lg-12">
+				<h2>SPONSORS</h2>
+				<div class="row">
+					<div class="sponsor-logo col-md-4 col-xs-12">
+						<img src="assets/dia.png" alt="DIA Logo">
+					</div>
+					<div class="sponsor-logo acc col-md-4 col-xs-12">
+						<img src="assets/acc.png" alt="ACC Logo">
+					</div>
+					<div class="sponsor-logo col-md-4 col-xs-12">
+						<img src="assets/ird.png" alt="IRD Logo">
+					</div>
+				</div>
+				<div class="row">
+					<div class="sponsor-logo stats col-md-4 col-xs-12">
+						<img src="assets/stats.png" alt="Stats Logo">
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 
-
-<div class="clear-float">
-	<footer>
-		<p class="v-align footer">Copyright © 2018 | Dataland</p>
-		<h5 class="btt v-align"><a href="#page-top">back to top</a></h5>
-	</footer>
-</div>
+	<div class="clear-float">
+		<footer>
+			<p class="v-align footer">Copyright © 2018 | Dataland</p>
+			<h5 class="btt v-align"><a href="#page-top">back to top</a></h5>
+		</footer>
+	</div>
 
 
 
