@@ -531,7 +531,8 @@ header {
 
 .sponsor-logo {
   padding-top: 100px;
-  text-align: center; }
+  text-align: center;
+  display: inline-block !important; }
   .sponsor-logo img {
     max-width: 200px;
     display: inline-block !important; }
