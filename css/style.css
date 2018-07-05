@@ -534,7 +534,7 @@ header {
   text-align: center; }
   .sponsor-logo img {
     max-width: 200px;
-    display: block !important; }
+    display: inline-block !important; }
 
 .acc img {
   max-width: 150px; }
