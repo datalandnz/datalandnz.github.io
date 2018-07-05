@@ -533,13 +533,19 @@ header {
   padding-top: 100px;
   text-align: center; }
   .sponsor-logo img {
-    max-width: 200px; }
+    max-width: 200px;
+    display: block !important; }
 
 .acc img {
   max-width: 150px; }
 
 .stats {
   padding-bottom: 20px; }
+
+.sponsors:after {
+  content: "";
+  display: table;
+  clear: both; }
 
 .faq {
   height: 100vh;

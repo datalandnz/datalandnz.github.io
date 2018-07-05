@@ -701,6 +701,7 @@ header,
   text-align: center;
   img{
     max-width: 200px;
+    display: block !important ;
   }
 }
 
@@ -713,10 +714,15 @@ header,
 .stats{
   padding-bottom: 20px;
   img{
-    
+
   }
 }
 
+.sponsors:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 .faq {
     height: 100vh;
