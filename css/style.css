@@ -531,22 +531,32 @@ header {
 
 .sponsor-logo {
   padding-top: 100px;
-  text-align: center;
-  display: inline-block !important; }
+  text-align: center; }
   .sponsor-logo img {
-    max-width: 200px;
-    display: inline-block !important; }
+    max-width: 200px; }
 
-.acc img {
-  max-width: 150px; }
+.ird {
+  padding-top: 100px;
+  text-align: center; }
+  .ird img {
+    max-width: 200px; }
+
+.dia {
+  padding-top: 100px;
+  text-align: center; }
+  .dia img {
+    max-width: 200px; }
+
+.acc {
+  padding-top: 100px;
+  text-align: center; }
+  .acc img {
+    max-width: 150px; }
 
 .stats {
   padding-bottom: 20px; }
-
-.sponsors:after {
-  content: "";
-  display: table;
-  clear: both; }
+  .stats img {
+    max-width: 200px; }
 
 .faq {
   height: 100vh;

@@ -699,14 +699,30 @@ header,
 
   padding-top: 100px;
   text-align: center;
-  display: inline-block !important ;
   img{
     max-width: 200px;
-    display: inline-block !important ;
+  }
+}
+
+.ird{
+  padding-top: 100px;
+  text-align: center;
+  img{
+    max-width: 200px;
+  }
+}
+
+.dia{
+  padding-top: 100px;
+  text-align: center;
+  img{
+    max-width: 200px;
   }
 }
 
 .acc{
+  padding-top: 100px;
+  text-align: center;
   img{
     max-width: 150px;
   }
@@ -715,15 +731,11 @@ header,
 .stats{
   padding-bottom: 20px;
   img{
-
+  max-width: 200px;
   }
 }
 
-.sponsors:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
 
 .faq {
     height: 100vh;
