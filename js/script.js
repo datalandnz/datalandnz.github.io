@@ -62,6 +62,18 @@ document.addEventListener('DOMContentLoaded', function(){
 	.addTo(controller);
 
 
+	adjustPosition = ->
+	  $(".logo-pic").css
+	    position: "absolute"
+	    left: ($(window).width() - $(".className").outerWidth()) / 2
+	    top: ($(window).height() - $(".className").outerHeight()) / 2
+	  return
 
+
+	$(window).resize adjustPosition;
+
+
+	$(document).ready ->
+	  adjustPosition();
 
 }); //End of jQuery

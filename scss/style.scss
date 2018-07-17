@@ -331,7 +331,7 @@ header,
     width: 100vw;
     // background-color: #3A6AAF;
     background-image: url('../assets/background2.png');
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     display: flex;
 }
 
@@ -378,14 +378,11 @@ header,
     /*it can be fixed too*/
     left: 0;
     right: 0;
-    top: 200px;
+    top: 10vh;
     bottom: 0;
     margin: auto;
-    // text-align: center; margin: 1em 0;
-    /*this to solve "the content will not be cut when the window is smaller than the content": */
     max-width: 50%;
     max-height: 50%;
-    // overflow: auto;
     text-align: center;
 
     img {
@@ -1017,6 +1014,7 @@ footer {
 }
 
 //Media Queries
+
 
 @media only screen and (max-width: 1200px) {
 
