@@ -255,6 +255,9 @@ header {
   width: 100%;
   background-color: #F3F3F3; }
 
+.hamburger-nav {
+  display: none; }
+
 .content {
   height: 100%;
   width: 100%; }
@@ -519,29 +522,48 @@ header {
     text-align: center;
     margin-top: 50px; }
 
-.sponsors {
+.days {
+  text-align: center; }
+
+.btn-schedule {
+  border: 1px solid black;
+  width: 100px; }
+
+.day1Btn {
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #f1f1f1; }
+
+.day2Btn {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.day-1 {
+  text-align: center;
+  padding-top: 40px;
+  transition: ease-in-out 1s; }
+  .day-1 img {
+    max-width: 80vw; }
+
+.day-1-992 {
+  display: none; }
+
+.day-2-992 {
+  display: none; }
+
+.day-2 {
+  text-align: center;
+  padding-top: 40px;
+  display: none;
+  transition: ease-in-out 1s; }
+  .day-2 img {
+    max-width: 80vw; }
+
+.random-section {
   height: 100vh;
   width: 100vw;
-  background-color: #FFF; }
-  .sponsors h2 {
-    font-size: 3.5em;
-    text-align: center;
-    margin-top: 50px; }
-
-.s-logo {
-  padding-top: 100px;
-  text-align: center; }
-  .s-logo img {
-    max-width: 200px; }
-
-.acc {
-  padding-top: 100px;
-  text-align: center; }
-  .acc img {
-    max-width: 150px; }
-
-.stats {
-  padding-bottom: 20px; }
+  background-color: #2196F3;
+  display: inline-table; }
 
 .faq {
   height: 100vh;
@@ -625,124 +647,29 @@ footer {
     color: #474747;
     text-decoration: none; }
 
-.flex-container {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  justify-content: space-around; }
-
-.flex-item {
-  padding: 5px;
-  margin-top: 10px;
-  line-height: 150px;
-  color: white;
-  font-weight: bold;
-  font-size: 3em;
-  text-align: center; }
-
-#pocket {
-  width: 100vw;
-  background-color: #F3F3F3;
-  overflow: auto;
-  display: block; }
-
-.pocket-pics {
-  max-width: 391px;
-  max-height: 469px; }
-
-#flat-smart {
-  width: 100vw;
-  background-color: #ffffff;
-  overflow: auto;
-  display: block; }
-
-#traveler {
-  width: 100vw;
-  background-color: #F3F3F3;
-  overflow: auto;
-  display: block; }
-
-#lsb {
-  width: 100vw;
-  background-color: #ffffff;
-  overflow: auto;
-  display: block; }
-
-.text-spacing h2 {
-  font-size: 3em;
-  padding-top: 40px;
-  padding-bottom: 10px;
-  text-transform: uppercase; }
-.text-spacing p {
-  padding-top: 10px;
-  padding-bottom: 40px;
-  font-size: 1.2em; }
-
-.psl-role {
-  width: 100vw;
-  background-color: #F3F3F3;
-  overflow: auto;
-  display: block; }
-
-.psl-images img {
-  max-width: 100%;
-  padding-top: 10px;
-  padding-bottom: 20px; }
-
-.psl-approach {
-  width: 100vw;
-  background-color: white;
-  overflow: auto; }
-
-.psl-start {
-  width: 100vw;
-  background-color: #F3F3F3;
-  overflow: auto; }
-
-.psl-mobile {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  .psl-mobile img {
-    padding-left: 10px;
-    padding-right: 10px;
-    float: left; }
-
-.psl-final {
-  width: 100vw;
-  background-color: white;
-  overflow: auto; }
-
-.photography-images img {
-  max-width: 49%;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  padding-right: 10px;
-  padding-left: 10px; }
-
-.photography-nature {
-  width: 100vw;
-  background-color: #F3F3F3;
-  overflow: auto;
-  display: block; }
-
-.hamburger-nav {
-  display: none; }
-
-.nature-container {
+.sponsors {
   height: 100vh;
   width: 100vw;
-  background-color: #F3F3F3; }
+  background-color: #FFF; }
+  .sponsors h2 {
+    font-size: 3.5em;
+    text-align: center;
+    margin-top: 50px; }
 
-.hello {
-  text-align: center;
-  padding-top: 100px; }
+.s-logo {
+  padding-top: 100px;
+  text-align: center; }
+  .s-logo img {
+    max-width: 200px; }
+
+.acc {
+  padding-top: 100px;
+  text-align: center; }
+  .acc img {
+    max-width: 150px; }
+
+.stats {
+  padding-bottom: 20px; }
 
 @media only screen and (max-width: 1200px) {
   .logo-pic {
@@ -755,7 +682,33 @@ footer {
 
   .quote-text h2 {
     padding-top: 10px;
-    font-size: 21px; } }
+    font-size: 21px; }
+
+  .day-1 {
+    display: none;
+    transition: ease-in-out 1s; }
+    .day-1 img {
+      max-width: 80vw; }
+
+  .day-2 {
+    display: none;
+    transition: ease-in-out 1s; }
+    .day-2 img {
+      max-width: 80vw; }
+
+  .day-1-992 {
+    display: block;
+    text-align: center;
+    padding-top: 40px;
+    transition: ease-in-out 1s; }
+    .day-1-992 img {
+      max-width: 60vw; }
+
+  .day-2-992 {
+    display: none;
+    transition: ease-in-out 1s; }
+    .day-2-992 img {
+      max-width: 80vw; } }
 @media screen and (max-width: 510px) {
   /*
    * Made by Erik Terwan

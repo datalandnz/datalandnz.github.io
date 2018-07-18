@@ -61,19 +61,57 @@ document.addEventListener('DOMContentLoaded', function(){
 	.setClassToggle('.dev-container', 'fade-in') //add class to UX icons
 	.addTo(controller);
 
+	$(".day1Btn").click(function(){
+		$(".day1Btn").css("background-color","#f1f1f1");
+		$(".day2Btn").css("background-color","white");
+		$(".day-1").css("display","block");
+		$(".day-2").css("display","none");
+	});
 
-	adjustPosition = ->
-	  $(".logo-pic").css
-	    position: "absolute"
-	    left: ($(window).width() - $(".className").outerWidth()) / 2
-	    top: ($(window).height() - $(".className").outerHeight()) / 2
-	  return
+	$(".day2Btn").click(function(){
+		$(".day2Btn").css("background-color","#f1f1f1");
+		$(".day1Btn").css("background-color","white");
+		$(".day-2").css("display","block");
+		$(".day-1").css("display","none");
+
+	});
 
 
-	$(window).resize adjustPosition;
 
 
-	$(document).ready ->
-	  adjustPosition();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }); //End of jQuery
