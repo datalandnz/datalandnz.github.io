@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		$(".day1Btn").css("background-color","#f7605f");
 		$(".day1Btn").css("color","white");
 		$(".day2Btn").css("background-color","white");
-		$(".day1Btn").css("color","black");
+		$(".day2Btn").css("color","black");
 	});
 
 	$(".day2Btn").click(function(){
