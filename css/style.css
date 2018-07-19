@@ -514,8 +514,9 @@ header {
   color: white; }
 
 .schedule {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
+  overflow: hidden;
   background-color: #FFF; }
   .schedule h2 {
     font-size: 3.5em;
@@ -532,7 +533,8 @@ header {
 .day1Btn {
   margin-left: 10px;
   margin-right: 10px;
-  background-color: #f1f1f1; }
+  background-color: #f7605f;
+  color: white; }
 
 .day2Btn {
   margin-left: 10px;
@@ -549,6 +551,9 @@ header {
   display: none; }
 
 .day-2-992 {
+  display: none; }
+
+.day-2-700 {
   display: none; }
 
 .day-2 {
@@ -709,6 +714,19 @@ footer {
     transition: ease-in-out 1s; }
     .day-2-992 img {
       max-width: 80vw; } }
+@media screen and (max-width: 700px) {
+  .day-2-700 {
+    display: block;
+    text-align: center;
+    padding-top: 40px; }
+    .day-2-700 img {
+      max-width: 70vw; }
+
+  .day-1-992 {
+    display: none; }
+
+  .day-2-992 {
+    display: none; } }
 @media screen and (max-width: 510px) {
   /*
    * Made by Erik Terwan
