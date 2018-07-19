@@ -418,6 +418,8 @@ header {
   margin: 0 auto;
   text-align: center;
   margin-top: 100px; }
+  .ux-icon img {
+    max-width: 256px; }
 
 .skills-text {
   color: #353535;
@@ -442,6 +444,7 @@ header {
 
 .dev-container {
   height: 100vh;
+  min-height: 850px;
   width: 100vw;
   background-color: #F3F3F3;
   opacity: 0;
@@ -665,7 +668,7 @@ footer {
   padding-top: 100px;
   text-align: center; }
   .s-logo img {
-    max-width: 200px; }
+    max-width: 250px; }
 
 .acc {
   padding-top: 100px;
@@ -673,7 +676,7 @@ footer {
   .acc img {
     max-width: 150px; }
 
-.stats {
+.mpi {
   padding-bottom: 20px; }
 
 @media only screen and (max-width: 1200px) {
@@ -682,6 +685,12 @@ footer {
     max-width: 50%;
     max-height: 50%; } }
 @media only screen and (max-width: 992px) {
+  .dev-container {
+    height: 1150px; }
+
+  .ux {
+    height: 1000px; }
+
   .skills-icon h2 {
     margin: 0; }
 
@@ -715,6 +724,12 @@ footer {
     .day-2-992 img {
       max-width: 80vw; } }
 @media screen and (max-width: 700px) {
+  .dev-container {
+    height: 1200px; }
+
+  .ux {
+    height: 1200px; }
+
   .day-2-700 {
     display: block;
     text-align: center;
@@ -738,6 +753,9 @@ footer {
    * production code, beware of the browser
    * prefixes.
    */
+  .dev-container {
+    height: 1500px; }
+
   .btt {
     display: none; }
 
@@ -915,7 +933,7 @@ footer {
     height: auto; }
 
   .dev-container {
-    height: 1100px; }
+    height: 1500px; }
 
   .skills-icon h2 {
     font-size: 6em;

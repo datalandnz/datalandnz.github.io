@@ -534,13 +534,13 @@ header,
 }
 
 .ux-icon {
-    // border: 1px black dotted;
-    // float: left;
     margin: 0 auto;
     text-align: center;
     margin-top: 100px;
-    // width: 256px;
-    // height: 256px;
+    img{
+      max-width: 256px;
+    }
+
 }
 
 .skills-text {
@@ -579,6 +579,7 @@ header,
 
 .dev-container {
     height: 100vh;
+    min-height: 850px;
     width: 100vw;
     background-color: #F3F3F3;
     opacity: 0;
@@ -887,7 +888,7 @@ footer {
   padding-top: 100px;
   text-align: center;
   img{
-    max-width: 200px;
+    max-width: 250px;
   }
 }
 
@@ -900,11 +901,8 @@ footer {
   }
 }
 
-.stats{
+.mpi{
   padding-bottom: 20px;
-  img{
-
-  }
 }
 
 
@@ -927,6 +925,16 @@ footer {
 
 
 @media only screen and (max-width: 992px) {
+
+  .dev-container{
+    height: 1150px;
+  }
+
+  .ux{
+    height: 1000px;
+  }
+
+
     .skills-icon h2 {
         margin: 0;
     }
@@ -976,6 +984,14 @@ footer {
 
 @media screen and (max-width: 700px) {
 
+  .dev-container {
+    height: 1200px;
+  }
+
+  .ux{
+    height: 1200px;
+  }
+
   .day-2-700{
     display: block;
     text-align: center;
@@ -1010,6 +1026,11 @@ footer {
      * production code, beware of the browser
      * prefixes.
      */
+
+     .dev-container{
+       height: 1500px;
+     }
+
 
      .btt{
     display: none;
@@ -1267,7 +1288,7 @@ footer {
 
 
     .dev-container{
-            height: 1100px;
+            height: 1500px;
     }
 
     .skills-icon{
