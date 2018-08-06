@@ -541,7 +541,8 @@ header {
 
 .day2Btn {
   margin-left: 10px;
-  margin-right: 10px; }
+  margin-right: 10px;
+  background-color: white; }
 
 .day-1 {
   text-align: center;
@@ -566,6 +567,13 @@ header {
   transition: ease-in-out 1s; }
   .day-2 img {
     max-width: 80vw; }
+
+.day-1-415 {
+  display: none; }
+
+.day-2-415 {
+  display: none;
+  text-align: center; }
 
 .random-section {
   height: 100vh;
@@ -684,7 +692,7 @@ footer {
     border: none;
     max-width: 50%;
     max-height: 50%; } }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 992px) and (min-width: 700px) {
   .dev-container {
     height: 1150px; }
 
@@ -699,16 +707,10 @@ footer {
     font-size: 21px; }
 
   .day-1 {
-    display: none;
-    transition: ease-in-out 1s; }
-    .day-1 img {
-      max-width: 80vw; }
+    display: none; }
 
   .day-2 {
-    display: none;
-    transition: ease-in-out 1s; }
-    .day-2 img {
-      max-width: 80vw; }
+    display: none; }
 
   .day-1-992 {
     display: block;
@@ -722,8 +724,11 @@ footer {
     display: none;
     transition: ease-in-out 1s; }
     .day-2-992 img {
-      max-width: 80vw; } }
-@media screen and (max-width: 700px) {
+      max-width: 80vw; }
+
+  .day-1 {
+    display: none; } }
+@media screen and (max-width: 700px) and (min-width: 510px) {
   .dev-container {
     height: 1200px; }
 
@@ -737,11 +742,20 @@ footer {
     .day-2-700 img {
       max-width: 70vw; }
 
+  .day-1 {
+    display: none; }
+
+  .day-2 {
+    display: none; }
+
   .day-1-992 {
     display: none; }
 
   .day-2-992 {
-    display: none; } }
+    display: none; }
+
+  .day-1-700 {
+    display: block; } }
 @media screen and (max-width: 510px) {
   /*
    * Made by Erik Terwan
@@ -753,6 +767,25 @@ footer {
    * production code, beware of the browser
    * prefixes.
    */
+  .day-1 {
+    display: none; }
+
+  .day-2 {
+    display: none; }
+
+  .day-1-415 {
+    display: none; }
+
+  .day-2-700 {
+    display: block;
+    text-align: center;
+    padding-top: 40px; }
+    .day-2-700 img {
+      max-width: 70vw; }
+
+  .day-1-992 {
+    display: none; }
+
   .dev-container {
     height: 1500px; }
 
@@ -956,6 +989,22 @@ footer {
     font-size: 14px; }
 
   input:checked ~ .tab-content {
-    max-height: 30em; } }
+    max-height: 30em; }
+
+  .day-1-415 {
+    display: block;
+    text-align: center;
+    padding-top: 40px; }
+    .day-1-415 img {
+      max-width: 70vw; }
+
+  .day-1-992 {
+    display: none; }
+
+  .day-2-700 {
+    display: none; }
+
+  .day-1-992 {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
