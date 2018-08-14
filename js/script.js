@@ -3,6 +3,8 @@ $(document).ready(function(){
 
 	var buttonOne = true;
 	var buttonTwo = false;
+	var threeAcross1 = false;
+	var threeAcross2 = false;
 
 
 document.addEventListener('DOMContentLoaded', function(){
@@ -65,117 +67,149 @@ document.addEventListener('DOMContentLoaded', function(){
 	.setClassToggle('.dev-container', 'fade-in') //add class to UX icons
 	.addTo(controller);
 
-	$(".day1Btn").click(function(){
 
-		if ($(window).width() <=992) {
-			$(".day-2").css("display","none");
-			$(".day-1").css("display","none");
-			buttonOne = true;
-			buttonTwo = false;
-			console.log("less than 992px working");
-		}else{
-		$(".day-1").css("display","block");
-		$(".day-2").css("display","none");
-		}
+
+$(".day1Btn").click(function(){
+		$(".day2").hide();
+		$(".day1").show();
+});
+
+$(".day2Btn").click(function(){
+		$(".day2").show();
+		$(".day-2").show();
+		$(".day-2-992").show();
+		$(".day1").hide();
+		console.log("working");
+});
+
+
+$(".day1Btn").click(function(){
 		$(".day1Btn").css("background-color","#f7605f");
 		$(".day1Btn").css("color","white");
 		$(".day2Btn").css("background-color","white");
 		$(".day2Btn").css("color","black");
-	});
 
-	$(".day2Btn").click(function(){
-		if ($(window).width() <=992) {
-			$(".day-2").css("display","none");
-			$(".day-1").css("display","none");
-			buttonTwo = true;
-			buttonOne = false;
-			console.log("less than 992px working");
-		}else{
-			$(".day-2").css("display","block");
-			$(".day-1").css("display","none");
+});
 
-		}
+//Day 2 button
+$(".day2Btn").click(function(){
 
-		$(".day2Btn").css("background-color","#f7605f");
-		$(".day2Btn").css("color","white");
-		$(".day1Btn").css("background-color","white");
-		$(".day1Btn").css("color","black");
+	$(".day1").hide();
+
+	$(".day2Btn").css("color","white");
+	$(".day2Btn").css("background-color","#f7605f");
+	$(".day1Btn").css("background-color","white");
+	$(".day1Btn").css("color","black");
 
 	});
+//
+// 	if ( threeAcross2 = true) {
+// 			$(".day-1").css("display","none");
+// 			$(".day-2").css("display","none");
+// 			$(".day-2-992").css("display","block");
+// 	}
+// console.log("click", threeAcross2);
+//
+// });
+
+
+// $(".day2Btn").click(function(){
+// 	if ($(window).width() <=992) {
+// 		$(".day-2").css("display","none");
+// 		$(".day-1").css("display","none");
+// 		buttonTwo = true;
+// 		buttonOne = false;
+// 		console.log("less than 992px working");
+// 	}else{
+// 		$(".day-2").css("display","block");
+// 		$(".day-1").css("display","none");
+//
+// 	}
+
+
+	// $(".day1Btn").click(function(){
+	//
+	// 	if ($(window).width() <=992) {
+	// 		$(".day-2").css("display","none");
+	// 		$(".day-1").css("display","none");
+	// 		buttonOne = true;
+	// 		buttonTwo = false;
+	// 		console.log("less than 992px working");
+	// 	}else{
+	// 	$(".day-1").css("display","block");
+	// 	$(".day-2").css("display","none");
+	// 	}
+	// 	$(".day1Btn").css("background-color","#f7605f");
+	// 	$(".day1Btn").css("color","white");
+	// 	$(".day2Btn").css("background-color","white");
+	// 	$(".day2Btn").css("color","black");
+	// });
+	//
+	// $(".day2Btn").click(function(){
+	// 	if ($(window).width() <=992) {
+	// 		$(".day-2").css("display","none");
+	// 		$(".day-1").css("display","none");
+	// 		buttonTwo = true;
+	// 		buttonOne = false;
+	// 		console.log("less than 992px working");
+	// 	}else{
+	// 		$(".day-2").css("display","block");
+	// 		$(".day-1").css("display","none");
+	//
+	// 	}
+	//
+	// 	$(".day2Btn").css("background-color","#f7605f");
+	// 	$(".day2Btn").css("color","white");
+	// 	$(".day1Btn").css("background-color","white");
+	// 	$(".day1Btn").css("color","black");
+	//
+	// });
 
 //Makes sure when re-sizing the window the day the user clicked on will show
 
-	$(window).resize(function(){
-		if ($(window).width() >=977) {
-			if (buttonOne = true) {
-				$(".day-1").css("display","block");
-				$(".day-2").css("display","none");
-			}
-
-
-
-
-			if (buttonTwo = true) {
-				$(".day-2").css("display","block");
-				$(".day-1").css("display","none");
-			}
-		}
-
-		console.log(buttonTwo);
-	});
-
-
-
-
-	if ($(window).width() <=992 && $(window).width() >=700) {
-		$(".day-2").css("display","none");
-		$(".day-1").css("display","none");
-		$(".day-1-415").css("display","none");
-		console.log("Between 992px and 700px");
-
-	}
-
-	if ($(window).width() <=699 && $(window).width() >=416) {
-		$(".day-2-700").css("display","block");
-		$(".day-1-700").css("display","block");
-		console.log("Between 699px and 416px");
-
-	}
-
-	if ($(window).width() <=415) {
-		$(".day-2-700").css("display","none");
-		$(".day-1-700").css("display","none");
-		$(".day-1-415").css("display","block");
-
-	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	// $(window).resize(function(){
+	// 	if ($(window).width() >=977) {
+	// 		if (buttonOne = true) {
+	// 			$(".day-1").css("display","block");
+	// 			$(".day-2").css("display","none");
+	// 		}
+	//
+	//
+	//
+	//
+	// 		if (buttonTwo = true) {
+	// 			$(".day-2").css("display","block");
+	// 			$(".day-1").css("display","none");
+	// 		}
+	// 	}
+	//
+	// 	console.log(buttonTwo);
+	// });
+	//
+	//
+	//
+	//
+	// if ($(window).width() <=992 && $(window).width() >=700) {
+	// 	$(".day-2").css("display","none");
+	// 	$(".day-1").css("display","none");
+	// 	$(".day-1-415").css("display","none");
+	// 	console.log("Between 992px and 700px");
+	//
+	// }
+	//
+	// if ($(window).width() <=699 && $(window).width() >=416) {
+	// 	$(".day-2-700").css("display","block");
+	// 	$(".day-1-700").css("display","block");
+	// 	console.log("Between 699px and 416px");
+	//
+	// }
+	//
+	// if ($(window).width() <=415) {
+	// 	$(".day-2-700").css("display","none");
+	// 	$(".day-1-700").css("display","none");
+	// 	$(".day-1-415").css("display","block");
+	//
+	// }
 
 
 

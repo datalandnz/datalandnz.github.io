@@ -557,13 +557,16 @@ header {
 .day-2-992 {
   display: none; }
 
+.day-1-700 {
+  display: none; }
+
 .day-2-700 {
   display: none; }
 
 .day-2 {
+  display: none;
   text-align: center;
   padding-top: 40px;
-  display: none;
   transition: ease-in-out 1s; }
   .day-2 img {
     max-width: 80vw; }
@@ -687,6 +690,9 @@ footer {
 .mpi {
   padding-bottom: 20px; }
 
+.day-2-992 {
+  display: none; }
+
 @media only screen and (max-width: 1200px) {
   .logo-pic {
     border: none;
@@ -709,7 +715,7 @@ footer {
   .day-1 {
     display: none; }
 
-  .day-2 {
+  .day-2 img {
     display: none; }
 
   .day-1-992 {
@@ -721,12 +727,14 @@ footer {
       max-width: 60vw; }
 
   .day-2-992 {
-    display: none;
+    display: block;
+    text-align: center;
+    padding-top: 40px;
     transition: ease-in-out 1s; }
     .day-2-992 img {
-      max-width: 80vw; }
+      max-width: 60vw; }
 
-  .day-1 {
+  .day-1 .day-2 {
     display: none; } }
 @media screen and (max-width: 700px) and (min-width: 510px) {
   .dev-container {
@@ -735,7 +743,16 @@ footer {
   .ux {
     height: 1200px; }
 
+  .day-1-700 {
+    padding-top: 40px;
+    display: block;
+    text-align: center;
+    padding-top: 40px; }
+    .day-1-700 img {
+      max-width: 70vw; }
+
   .day-2-700 {
+    padding-top: 40px;
     display: block;
     text-align: center;
     padding-top: 40px; }
@@ -745,7 +762,7 @@ footer {
   .day-1 {
     display: none; }
 
-  .day-2 {
+  .day-2 img {
     display: none; }
 
   .day-1-992 {
@@ -773,17 +790,27 @@ footer {
   .day-2 {
     display: none; }
 
-  .day-1-415 {
-    display: none; }
-
-  .day-2-700 {
+  .day-2-415 {
     display: block;
     text-align: center;
     padding-top: 40px; }
-    .day-2-700 img {
+    .day-2-415 img {
+      max-width: 70vw; }
+
+  .day-1-415 {
+    display: block;
+    text-align: center;
+    padding-top: 40px; }
+    .day-1-415 img {
       max-width: 70vw; }
 
   .day-1-992 {
+    display: none; }
+
+  .day-2-992 {
+    display: none; }
+
+  .day-2 img {
     display: none; }
 
   .dev-container {
@@ -1004,7 +1031,7 @@ footer {
   .day-2-700 {
     display: none; }
 
-  .day-1-992 {
+  .day-2-992 {
     display: none; } }
 
 /*# sourceMappingURL=style.css.map */
