@@ -1,3 +1,39 @@
+body.day2 .day-2-415 {
+  display: none; }
+  @media (max-width: 415px) {
+    body.day2 .day-2-415 {
+      display: block; } }
+body.day2 .day-2-700 {
+  display: none; }
+  @media (min-width: 415px) and (max-width: 700px) {
+    body.day2 .day-2-700 {
+      display: block; } }
+body.day2 .day-2-992 {
+  display: none; }
+  @media (min-width: 700px) and (max-width: 992px) {
+    body.day2 .day-2-992 {
+      display: block; } }
+
+body.day1 .day-1-415 {
+  display: block; }
+  @media (max-width: 415px) {
+    body.day1 .day-1-415 {
+      display: none; } }
+body.day1 .day-1-700 {
+  display: none; }
+  @media (min-width: 415px) and (max-width: 992px) {
+    body.day1 .day-1-700 {
+      display: block; } }
+body.day1 .day-1-992 {
+  display: none; }
+  @media (min-width: 700px) and (max-width: 992px) {
+    body.day1 .day-1-992 {
+      display: block; } }
+
+.day-2-415 {
+  display: none;
+  text-align: center; }
+
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;

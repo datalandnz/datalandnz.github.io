@@ -70,16 +70,20 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 $(".day1Btn").click(function(){
-		$(".day2").hide();
-		$(".day1").show();
+		// $(".day2").hide();
+		// $(".day1").show();
+		$("body").addClass(".day1");
+		$("body").removeClass(".day2");
+
 });
 
 $(".day2Btn").click(function(){
-		$(".day2").show();
-		$(".day-2").show();
-		// $(".day-2-992").show();
-		$(".day1").hide();
-		console.log("working");
+		// $(".day2").show();
+		// $(".day-2").show();
+		// $(".day1").hide();
+		// console.log("working");
+		$("body").addClass(".day2");
+		$("body").removeClass(".day1");
 });
 
 
