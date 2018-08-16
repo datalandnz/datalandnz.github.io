@@ -77,7 +77,7 @@ $(".day1Btn").click(function(){
 $(".day2Btn").click(function(){
 		$(".day2").show();
 		$(".day-2").show();
-		$(".day-2-992").show();
+		// $(".day-2-992").show();
 		$(".day1").hide();
 		console.log("working");
 });
