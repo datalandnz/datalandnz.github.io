@@ -77,6 +77,8 @@ $(".day1Btn").click(function(){
 
 });
 
+
+
 $(".day2Btn").click(function(){
 		// $(".day2").show();
 		// $(".day-2").show();

@@ -620,6 +620,12 @@ header {
   background-color: #2196F3;
   display: inline-table; }
 
+.problems-container {
+  padding-top: 50px; }
+
+.problem-center {
+  text-align: center; }
+
 .faq {
   height: 100vh;
   width: 100vw;
@@ -701,6 +707,10 @@ footer {
   .btt a:hover {
     color: #474747;
     text-decoration: none; }
+
+.problem-agency-text {
+  font-size: 2em;
+  font-weight: bold; }
 
 .sponsors {
   height: 100vh;
