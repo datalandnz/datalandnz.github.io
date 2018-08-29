@@ -186,6 +186,13 @@ header {
   max-width: 40px;
   margin-left: 10px; }
 
+.gtt {
+  display: flex;
+  align-items: center;
+  margin-left: 20px; }
+  .gtt img {
+    max-width: 15vh; }
+
 .header .header-nav {
   display: flex;
   align-items: center;
@@ -624,7 +631,17 @@ header {
   padding-top: 50px; }
 
 .problem-center {
-  text-align: center; }
+  text-align: center;
+  padding: 30px; }
+  .problem-center a {
+    color: white;
+    text-decoration: underline;
+    border-radius: 4px;
+    background-color: #696DE2;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px; }
 
 .faq {
   height: 100vh;
@@ -715,7 +732,9 @@ footer {
 .sponsors {
   height: 100vh;
   width: 100vw;
-  background-color: #FFF; }
+  overflow: auto;
+  background-color: #FFF;
+  position: relative; }
   .sponsors h2 {
     font-size: 3.5em;
     text-align: center;

@@ -159,6 +159,7 @@ input[type=radio]:checked + label::after {
 }
 
 
+
 .but{
     display: block;
 }
@@ -262,6 +263,16 @@ header,
   img{
     max-width: 40px;
     margin-left: 10px;
+  }
+}
+
+
+.gtt{
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  img{
+    max-width: 15vh;
   }
 }
 
@@ -837,6 +848,17 @@ header,
 
 .problem-center{
   text-align: center;
+  padding: 30px;
+  a{
+    color: white;
+    text-decoration: underline;
+    border-radius: 4px;
+    background-color: #696DE2;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 
@@ -974,7 +996,9 @@ footer {
 .sponsors {
     height: 100vh;
     width: 100vw;
+    overflow: auto;
     background-color: #FFF;
+    position: relative;
     h2{
       font-size: 3.5em;
       text-align: center;
