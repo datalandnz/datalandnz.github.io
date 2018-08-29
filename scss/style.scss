@@ -850,14 +850,14 @@ header,
   text-align: center;
   padding: 30px;
   a{
-    color: white;
+    color:  #0000EE ;
     text-decoration: underline;
-    border-radius: 4px;
-    background-color: #696DE2;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
+    // border-radius: 4px;
+    // background-color: #696DE2;
+    // padding-top: 5px;
+    // padding-bottom: 5px;
+    // padding-left: 10px;
+    // padding-right: 10px;
   }
 }
 
@@ -1103,6 +1103,14 @@ footer {
   }
 
   .day-1 .day-2 {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 900px) {
+
+  .gtt{
     display: none;
   }
 
