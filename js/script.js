@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 
 
-
 //Hamburger Menu
 
 		$("#hamburger-dropdown").click(function(){
